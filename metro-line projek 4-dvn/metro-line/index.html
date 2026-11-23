@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard · Metro Line</title>
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/component.css"><link rel="stylesheet" href="css/art.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body><header id="nav"></header>
+<main class="container">
+  <section class="hero">
+    <div><span class="badge warm">Simulasi Jaringan Metro</span>
+      <h1 id="welcome" style="margin-top:10px"></h1>
+      <p>Bangun jalur, kendalikan kereta, dan antarkan penumpang ke bentuk tujuannya sebelum stasiun penuh sesak.</p>
+      <div class="row"><a id="btnStart" class="btn btn-primary" href="game.html">▶ Mulai Bermain</a><a class="btn btn-ghost" href="how-to-play.html">Cara Bermain</a></div></div>
+    <div data-hero></div>
+  </section>
+  <div class="rail-accent"></div>
+  <h2 class="section-title">Ringkasan Statistik</h2>
+  <section class="grid stats">
+    <div class="card stat"><b id="statBest">0</b><span>Skor Tertinggi</span></div>
+    <div class="card stat"><b id="statGames">0</b><span>Sesi Dimainkan</span></div>
+    <div class="card stat"><b id="statTime">00:00</b><span>Durasi Terlama</span></div>
+    <div class="card stat"><b id="statPax">0</b><span>Penumpang Diantar</span></div>
+  </section>
+  <h2 class="section-title">Riwayat Terbaru</h2>
+  <div class="card" id="history"></div>
+</main>
+<script src="js/core/storage.js"></script>
+<script src="js/core/data.js"></script>
+<script src="js/core/art.js"></script>
+<script src="js/core/ui.js"></script>
+<script src="js/pages/home.js"></script>
+</body></html>

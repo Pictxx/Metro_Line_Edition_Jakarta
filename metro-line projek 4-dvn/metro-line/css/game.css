@@ -1,0 +1,26 @@
+.game-body{overflow:hidden;height:100vh;background:radial-gradient(circle at 20% 10%,#d1fae5,transparent 45%),radial-gradient(circle at 90% 90%,#fff0d4,transparent 40%),#f2fbf7}
+#game{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:manipulation;cursor:pointer}
+.hud{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;gap:14px;padding:10px 16px;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--em-100);flex-wrap:wrap}
+.hud-stat{display:grid;line-height:1.1;padding:0 10px;border-left:2px solid var(--em-100)}
+.hud-stat span{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.hud-stat b{font-size:1.35rem;font-variant-numeric:tabular-nums;color:var(--em-700)}
+.hud-stat.warn b{color:var(--coral)}
+.speed{margin-left:auto;display:flex;gap:6px}
+.speed button{min-width:46px;padding:8px 12px;border-radius:10px;border:2px solid var(--em-200);background:#fff;font:700 .9rem var(--font);cursor:pointer;color:var(--em-700)}
+.speed button.active{background:var(--em-600);border-color:var(--em-600);color:#fff}
+.pause-badge{position:fixed;top:90px;left:50%;transform:translateX(-50%);background:var(--em-900);color:#fff;padding:8px 22px;border-radius:999px;font-weight:800;letter-spacing:.1em;z-index:9;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.6}}
+.dock{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:10;display:flex;gap:12px;align-items:center;padding:10px 14px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:20px;box-shadow:var(--shadow);border:1px solid var(--em-100);max-width:calc(100vw - 20px);flex-wrap:wrap;justify-content:center}
+.line-dock{display:flex;gap:8px;flex-wrap:wrap}
+.line-chip{--c:#10b981;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:14px;border:3px solid transparent;background:#fff;cursor:pointer;font:700 .85rem var(--font);box-shadow:inset 0 0 0 2px #e5efe9}
+.line-chip i{width:14px;height:14px;border-radius:50%;background:var(--c)}
+.line-chip small{color:var(--muted);font-weight:600}
+.line-chip.active{border-color:var(--c);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.dock-actions{display:flex;gap:8px}
+.speed-ind{min-width:52px;text-align:center;padding:6px 10px;border-radius:10px;background:var(--em-900);color:#fff;font-weight:800}
+.speed-ind.fast{background:var(--coral)}.speed-ind.paused{background:#64748b}
+.sig-bar{position:relative;height:36px;border-radius:12px;background:#e2e8f0;overflow:hidden}
+.sig-zone{position:absolute;top:0;bottom:0;background:linear-gradient(var(--em-400),var(--em-600));opacity:.9}
+.sig-needle{position:absolute;top:-2px;bottom:-2px;width:5px;margin-left:-2px;background:var(--coral);border-radius:4px}
+.hud .logo{font-size:1.05rem}
+@media(max-width:640px){.hud{gap:6px}.hud-stat b{font-size:1.05rem}.speed{margin-left:0}}
