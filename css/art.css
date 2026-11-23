@@ -1,0 +1,7 @@
+.logo{display:inline-flex;align-items:center;gap:10px;color:var(--em-900);font-weight:800;font-size:1.2rem;letter-spacing:-.02em;text-decoration:none!important}
+.logo svg{display:block;filter:drop-shadow(0 3px 6px rgba(5,150,105,.35))}
+.logo b{color:var(--em-600)}
+.hero-art{width:100%;max-width:460px;height:auto;animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.rail-accent{height:6px;border-radius:6px;background:linear-gradient(90deg,#10b981 0 33%,#f97316 33% 66%,#3b82f6 66%)}
+.shape-icon{display:inline-block;vertical-align:middle}

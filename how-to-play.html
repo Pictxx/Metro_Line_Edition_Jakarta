@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panduan · Metro Line</title>
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/component.css"><link rel="stylesheet" href="css/art.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body><header id="nav"></header>
+<main class="container">
+  <h1>Cara Bermain</h1><p class="muted" style="margin:8px 0 18px">Jaga semua stasiun tetap lancar selama mungkin.</p>
+  <div class="tabs"><button class="tab-btn active" data-tab="dasar">Dasar</button><button class="tab-btn" data-tab="kontrol">Kontrol</button><button class="tab-btn" data-tab="aturan">Aturan & Game Over</button></div>
+  <section data-panel="dasar" class="grid rules-grid">
+    <div class="card"><h3>1. Stasiun & Bentuk</h3><p class="muted">Setiap stasiun punya bentuk. Penumpang membawa bentuk tujuan dan turun di stasiun dengan bentuk yang sama.</p><br><div class="legend" id="shapeLegend"></div></div>
+    <div class="card"><h3>2. Bangun Jalur</h3><p class="muted">Pilih jalur di dok bawah, lalu klik stasiun untuk menambahkannya di ujung jalur. Jalur dengan ≥2 stasiun otomatis mendapat kereta.</p><br><div class="legend" id="lineLegend"></div></div>
+    <div class="card"><h3>3. Stasiun Baru</h3><p class="muted">Mulai dari 3 stasiun. Stasiun baru muncul tiap 2–3 menit waktu game; lihat hitung mundurnya di HUD.</p></div>
+  </section>
+  <section data-panel="kontrol" class="grid rules-grid hidden">
+    <div class="card"><h3>Kecepatan</h3><p class="muted"><b>Jeda</b> (Spasi), <b>1x</b> (tombol 1), <b>2x</b> (tombol 2). Timer dan animasi tetap akurat di semua mode. Saat jeda kamu tetap bisa merencanakan jalur.</p></div>
+    <div class="card"><h3>Kalibrasi Sinyal</h3><p class="muted">Mini-game ringan: kunci jarum di zona hijau untuk bonus poin dan kereta lebih cepat. Cooldown 45 detik.</p></div>
+    <div class="card"><h3>+ Kereta</h3><p class="muted">Tambah kereta di jalur terpilih (maks. 6 total) untuk mengangkut lebih banyak penumpang.</p></div>
+  </section>
+  <section data-panel="aturan" class="grid rules-grid hidden">
+    <div class="card"><h3>Poin</h3><p class="muted">+1 untuk setiap penumpang yang tiba di stasiun tujuan.</p></div>
+    <div class="card"><h3>Kapasitas</h3><p class="muted">Satu kereta memuat 6 penumpang. Penumpang hanya naik bila tujuannya ada di arah perjalanan kereta.</p></div>
+    <div class="card"><h3>Overload</h3><p class="muted">Jika sebuah stasiun menampung ≥8 penumpang, cincin merah terisi. Bila penuh (25 detik), permainan berakhir.</p></div>
+  </section>
+  <div class="row" style="margin-top:24px"><a class="btn btn-primary" href="game.html">▶ Mulai Bermain</a></div>
+</main>
+<script src="js/core/storage.js"></script>
+<script src="js/core/data.js"></script>
+<script src="js/core/art.js"></script>
+<script src="js/core/ui.js"></script>
+<script src="js/pages/rules.js"></script>
+</body></html>

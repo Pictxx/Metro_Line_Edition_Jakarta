@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Main · Metro Line</title>
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/component.css"><link rel="stylesheet" href="css/art.css"><link rel="stylesheet" href="css/game.css">
+</head>
+<body class="game-body">
+<div class="hud">
+  <a href="index.html" data-logo="30"></a>
+  <div class="hud-stat"><span>Skor</span><b id="hudScore">0</b></div>
+  <div class="hud-stat"><span>Waktu</span><b id="hudTime">00:00</b></div>
+  <div class="hud-stat"><span>Stasiun baru</span><b id="hudNext">02:00</b></div>
+  <div class="hud-stat"><span>Stasiun</span><b id="hudSt">3</b></div>
+  <div class="speed"><button id="btnPause" title="Jeda (Spasi)">⏸</button><button id="btn1x" class="active">1x</button><button id="btn2x">2x</button></div>
+</div>
+<canvas id="game"></canvas>
+<div id="pauseBadge" class="pause-badge hidden">JEDA</div>
+<div class="dock">
+  <div class="line-dock" id="lineDock"></div>
+  <div class="dock-actions"><button class="btn btn-ghost btn-sm" id="btnTrain">+ Kereta</button><button class="btn btn-primary btn-sm" id="btnSignal">📡 Kalibrasi Sinyal</button></div>
+  <div class="speed-ind" id="speedInd">1x</div>
+</div>
+<div id="toasts"></div>
+<script src="js/core/storage.js"></script><script src="js/core/data.js"></script><script src="js/core/art.js"></script><script src="js/core/ui.js"></script>
+<script src="js/game/minigames.js"></script><script src="js/game/engine.js"></script><script src="js/pages/play.js"></script>
+</body></html>
